@@ -81,6 +81,13 @@ header {
   margin-bottom: 5px;
 }
 
+.accordion {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 #academic-titles h3 {
   text-align: center;
   margin-top: 50px;
@@ -123,6 +130,29 @@ header {
   font-weight: 200;
   font-size: 10px;
 }
+
+footer {
+  text-align: center;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+#footer-icons a i {
+  color: black;
+}
+
+#copyright p {
+  color: black;
+  font-size: 12px;
+}
+
+
 
 @media screen and (max-width: 414px) {
   #know h3 {
