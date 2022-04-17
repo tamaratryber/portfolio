@@ -7,28 +7,92 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(47, 47, 46));
+  background-image: linear-gradient(to bottom, rgb(23, 23, 23), rgb(88, 88, 88));
   width: 100vw;
   height: 100vh;
 }
 
-a {
-  color: white;
+header {
+  background-color: rgba(231, 231, 231, 0.948);
+  color: black;
+  height: 70px;
+  width: 100%;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#links {
+  width: 100%;
+  text-align: center;
+}
+
+#links a {
+  color: black;
   text-decoration: none;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-right: 20px;
+  padding-bottom: 5px;
 }
 
-.responsive-menu {
-  display: none;
+#links a:hover {
+  border-bottom: 0.3px solid black;
+  opacity: 0.7;
+
 }
 
-@media screen and (min-width: 414px) {
-  header {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+#links a:last-child {
+  margin-right: 0px;
+}
+
+#know {
+  background-image: url(./fundo.png);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#know hr {
+  border: none;
+  background-color: white;
+  opacity: 1;
+  width: 70%;
+  height: 0.5px;
+}
+
+#know h3 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+#know h4 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 18px;
+  letter-spacing: 6px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 414px) {
+  #know h3 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
   }
-
-  .responsive-menu {
-    font-size: 20px;
+  
+  #know h4 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    text-align: center;
   }
 }
