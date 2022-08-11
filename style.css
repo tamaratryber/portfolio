@@ -13,38 +13,40 @@ body {
 
 #header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
+  justify-content: space-between;
+  height: 10%;
   animation-duration: 3s;
+  align-items: center;
+  border-bottom: 0.3px solid white;
 }
 
 #header h1 {
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
 }
 
-#header h3 {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 18px;
-  letter-spacing: 6px;
-  margin-bottom: 5px;
+#logo, #links {
+  margin: 0 30px;
 }
 
-#header hr {
-  border: none;
-  background-color: white;
-  width: 70%;
-  height: 0.5px;
-  margin: 20px 0;
-}
-
-#header p {
-  font-size: 15px;
+#links a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 12px;
   letter-spacing: 2px;
-  font-weight: 300;
+}
+
+#links a:last-child {
+  margin-right: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer {
